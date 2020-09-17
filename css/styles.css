@@ -241,7 +241,7 @@ body {
 .backdrop.ih-hidden {
 	visibility: hidden;
 	opacity: 0;
-	/* pointer-events: none; */
+	pointer-events: none;
 }
 .backdrop {
 	position: fixed;
