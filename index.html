@@ -50,10 +50,66 @@
 							<p>Эффективные решения</p>
 							<p>для вашего бизнеса</p>
 						</h2>
-						<div class="flexbox">
-							<button class="btn" data-modal-open>Заказать услугу</button>
+					</div>
+					<div class="flexbox">
+						<button class="btn" data-modal-open>Заказать услугу</button>
+					</div>
+					<div class="backdrop is-hidden" data-modal>
+						<div class="modal">
+							<button data-modal-close>
+								<svg class="icon-closed-modal">
+									<use href="./images/symbol-defs.svg#icon-Vector-3"></use>
+								</svg>
+							</button>
+							<div class="modal-block">
+								<h2>Оставьте свои данные, мы вам перезвоним</h2>
+								<div class="form-block">
+									<form action="" method="POST" class="forms">
+										<div class="form-items">
+											<div class="form-items-list">
+												<label for="name">Имя</label>
+												<div class="block-form-icon">
+													<input type="text" name="name" id="name" class="form-input" />
+													<svg class="icon-Vector">
+														<use href="./images/symbol-defs.svg#icon-Vector"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="form-items-list">
+												<label for="telephone">Телефон</label>
+												<div class="block-form-icon">
+													<input type="tel" name="tel" id="telephone" class="form-input" />
+													<svg class="icon-Vector-1">
+														<use href="./images/symbol-defs.svg#icon-Vector-1"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="form-items-list">
+												<label for="mail">Почта</label>
+												<div class="block-form-icon">
+													<input type="email" name="mail" id="mail" class="form-input" />
+													<svg class="icon-Vector-2">
+														<use href="./images/symbol-defs.svg#icon-Vector-2"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="form-items-list">
+												<label for="comments">Комментарий</label>
+												<div>
+													<textarea name="comments" id="comments"></textarea>
+												</div>
+											</div>
+										</div>
+										<input type="checkbox" name="acept" id="flag" />
+										<label for="flag">
+											Соглашаюсь с рассылкой и принимаю
+											<span class="text-mod">Условия договора</span>
+										</label>
+									</form>
+									<button class="btn-modal">Подписаться</button>
+								</div>
+							</div>
 						</div>
-					
 					</div>
 				</section>
 				<section class="section info">
@@ -333,16 +389,26 @@
 							</ul>
 						</div>
 					</div>
+					<div class="footer-box">
+						<div class="form-mail-block">
+							<h2>Подпишитесь на рассылку</h2>
+							<div class="form-send">
+								<form action="" method="POST">
+									<input type="email" name="mail" placeholder="E-mail" />
+								</form>
+								<button class="btn-send">
+									Подписаться
+									<svg class="icon-send">
+										<use href="./images/symbol-defs.svg#icon-icon-send"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
-		<script src="./js/modal.js"></script>
-			<div class="backdrop ih-hidden" data-modal>
-				<div class="modal">
-					<button data-modal-close>закрыть</button>
-				</div>
-			</div>
-		</div>
+
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

@@ -238,7 +238,7 @@ body {
 }
 
 /* кнопка на модалку */
-.backdrop.ih-hidden {
+.backdrop.is-hidden {
 	opacity: 0;
 	pointer-events: none;
 }
@@ -263,6 +263,153 @@ body {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 }
+.modal-block {
+	position: relative;
+	display: block;
+	height: 100%;
+	margin-top: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+}
+.icon-closed-modal {
+	position: relative;
+	width: 11px;
+	height: 11px;
+
+	fill: #000000;
+}
+.icon-closed-modal:hover {
+	fill: #2196f3;
+}
+.form-block {
+	display: inline-block;
+	width: 100%;
+}
+.modal-block h2 {
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin: 0px 0px 12px 0px;
+}
+
+.form-items {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+.form-items-list {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.form-items-list label:hover {
+	fill: #2196f3;
+	border-color: #2196f3;
+}
+.form-items input {
+	width: 100%;
+	height: 40px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+.form-items label {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.01em;
+
+	color: #757575;
+	margin-bottom: 4px;
+}
+.form-items textarea {
+	min-width: 100%;
+	height: 120px;
+	resize: none;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+.forms input[type="checkbox"] {
+	width: 16px;
+	height: 15px;
+	border: 1px solid #212121;
+
+	background: #212121;
+}
+.btn-modal {
+	position: relative;
+	width: 200px;
+	height: 50px;
+	margin-left: 130px;
+	margin-top: 10px;
+
+	background: #188ce8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+.text-mod {
+	color: #2196f3;
+}
+.form-input {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+
+	transition-property: fill, border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-Vector {
+	position: absolute;
+	top: 65%;
+	left: 15px;
+	transform: translateY(-65%);
+
+	width: 12px;
+	height: 12px;
+}
+.icon-Vector-1 {
+	position: absolute;
+	top: 65%;
+	left: 15px;
+	transform: translateY(-65%);
+
+	width: 13px;
+	height: 13px;
+}
+.icon-Vector-2 {
+	position: absolute;
+	top: 65%;
+	left: 15px;
+	transform: translateY(-65%);
+
+	width: 15px;
+	height: 12px;
+}
+.block-form-icon:hover,
+.block-form-icon:focus {
+	fill: #2196f3;
+}
+
+.block-form-icon:hover .form-input,
+.block-form-icon:focus .form-input {
+	border-color: #2196f3;
+	cursor: pointer;
+}
+
 /*СЕКЦИЯ 2*/
 .info {
 	background: #ffffff;
@@ -673,6 +820,85 @@ body {
 .social-link-join:hover {
 	color: #ffffff;
 	background-color: #2196f3;
+}
+
+.footer-box {
+	display: flex;
+}
+
+.form-mail-block {
+	display: block;
+}
+.form-mail-block h2 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: #ffffff;
+
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.form-mail-block input {
+	width: 358px;
+	height: 50px;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+
+	background-color: rgba(0, 0, 0, 0);
+}
+.form-mail-block input::placeholder {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	letter-spacing: 0.03em;
+
+	color: rgba(255, 255, 255, 0.6);
+
+	padding-left: 16px;
+}
+.form-send {
+	display: flex;
+}
+.form-send form {
+	margin-right: 12px;
+}
+
+.btn-send {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	border: none;
+
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	color: #ffffff;
+
+	margin: 0px;
+}
+.icon-send {
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
 }
 /* ПОРТФОЛИО */
 
