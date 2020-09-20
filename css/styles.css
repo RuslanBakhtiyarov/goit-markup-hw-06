@@ -272,14 +272,35 @@ body {
 	padding-right: 40px;
 	padding-bottom: 40px;
 }
-.icon-closed-modal {
+.data-modal-close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+
+	border-radius: 50%;
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	padding: 0;
+}
+.icon-Vector-3 {
 	position: relative;
 	width: 11px;
 	height: 11px;
 
 	fill: #000000;
 }
-.icon-closed-modal:hover {
+.icon-Vector-3:hover {
 	fill: #2196f3;
 }
 .form-block {
